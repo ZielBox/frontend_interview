@@ -1,9 +1,18 @@
 # Task Details
-Please build a Dummy Dashboard similar to below Layout image. This task is more frontend task to test your skills on HTML, CSS, Javascript, DHTML, Laravel and Laravel's LiveWire framework.
+Please build a Dummy Dashboard similar to below Layout image. This task is more frontend task to test your skills on HTML, CSS(or Tailwind CSS Lib), Javascript, DHTML and 
+Svelte.
 
-This task is more about "Laravel LiveWire" frontend but to get the work done you need Composer(Laravel Package Manager), Laravel(PHP Framework), PHP, Git, Visual Studio Code IDE(has inbuild git), Apache or XAMPP setup and all installation instructions are availe in [README.md](READMDE.md) file.
+This task is more about "Svelte" frontend.
 
-Below is the Dashboard that you need to build using Laravel LiveWire.
+ But to get the work done you require below items:
+ 
+ - [Common General Dev Setup/Tools and Url's](README.md)
+
+ - Required - Git, Visual Studio Code IDE(has inbuild git), installation instructions are available at [Frontend Svelte Installation](docs/README.Frontend.Svelte.md) file.
+ 
+ - Optional - Incase you want to integrate Backend then install Composer(Laravel Package Manager), Laravel(PHP Framework),XAMPP setup and installation instructions are available at [Backend Installation](docs/README.Backend.md) file.
+
+Below is the Dashboard that you need to build using Svelte.
 
 1. Extreme Left hand side the blue column will be having Different Product option(circles or image) for selection.
 2. Once you click on Option(circle or image) then it will open foldable Column(Grey/Black color Menu) and it will be having further links to choose from. Grey/Blue lines in foldable menu are just links.
@@ -13,11 +22,16 @@ Below is the Dashboard that you need to build using Laravel LiveWire.
 6. Bottom Row will be having Cancel and Save button.
 
 HINT: Reference to Metronics Layout template will give you some hint about the layout names.[Marketting Automation Layout Template](https://preview.keenthemes.com/metronic8/demo31/index.html) resembles the layout that we are expecting here with some minor differences so you can use reference to complete your task. [Marketting Dashboard Layout image in references folder](references/Metrnoics-Marketting-Layout.PNG)
+
+# Layout Example for Task
 ![ALT](references/Metrnoics-Marketting-Layout.PNG)
 
 ![ALT](references/dashboard-example.PNG)
 
 Above is just a Webwire frame or looklike example and you can refer similar Dashboard/Layout example using Metronics that we have mentioned below. It is just for your understanding building.
+
+Incase, you are new to Backend, Frontend, Full Stack or unclear about how each component will stitch then below architecture diagram will help you to understand about the place in the Web interface where your Task work fit in big picture of the project. So we want you to code Frontend components colored in Orange. You can ignore svelte-plugin backend part as of now.
+
 
 # Acceptance Criteria
 Ideally, we would like to see similar Dummy Dashboard available on dashboard.
@@ -38,11 +52,32 @@ You are having a week of time from the date of receving the test in your inbox.
 NOTE: Your access will be revoked after that so make sure you upload your code before that.
 
 # Hint
- Tailwind - It gives you prebuilt Button, Text boxes, Classes etc so you can pick reference code from this website while working with LiveWire.
+ - Tailwind - It gives you prebuilt Button, Text boxes, Classes etc so you can pick reference code from this website while working with LiveWire.
  
- Metronics - This webpage will give you various types of Layout designs and their names so that you can further google to find examples to complete your tasks.
+ - Metronics - This webpage will give you various types of Layout designs and their names so that you can further google to find examples to complete your tasks.
 
- Setup - Usually, it takes 30Min to setup everything after reading all given installation steps.
+ - Setup - Usually, it takes 30Min to setup everything after reading all given installation steps.
+
+ - frontend-example-code - Working frontend-example-code is available so that you can focus on layout logic.Please install your setup instead of using this to avoid any issue.
 
 # Result
 Incase, we not revert you back then there are chances that we have found suitable condiate or else you will get to know about your selection in next 7 days after completion of the test.
+
+# Interview Tasks
+[1. Svelte Frontend Task(Compulsory)](TASK-1-Frontend.md)
+
+[2. DevOps Task (Optional)](TASK-2-DevOps.md)
+
+[3. Create Dockerfile for Frontend (Optional) ](TASK-3-Dockerfile.md)
+
+# References
+- [Understand Frontend & Backend Integration Architecture](docs/README.Fullstack-Stack-Tool.md)
+
+Best of luck!
+
+
+Thanks & Regards,
+
+Zielbox Interview Team
+
+[www.zielbox.com](http://www.zielbox.com)

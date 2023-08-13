@@ -1,7 +1,8 @@
 # Task Details
+Create Dockerfile to build docker image for frontend task given to you.
 
 # Acceptance Criteria
-
+We should be able to succesfully build image from your Dockerfile.
 
 # Notes
 1. We have given details about how to setup your laptop with required tools in README.md file.
