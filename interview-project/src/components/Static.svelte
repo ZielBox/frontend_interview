@@ -41,33 +41,29 @@
 
           <div class="w-full px-4 py-5 bg-white rounded-lg shadow">
             <div class="text-sm font-medium text-gray-500 truncate">
-              Total Profit
+              Total Profit:Group 1
             </div>
-            <div class="mt-1 text-3xl font-semibold text-gray-900">$ 450k</div>
+            <div class="mt-1 text-3xl font-semibold text-gray-900">$ 410k</div>
+            <br>
             <div class="text-sm font-medium text-gray-500 truncate">
-              Total Profit
+              Total Profit:Group 2
             </div>
-            <div class="mt-1 text-3xl font-semibold text-gray-900">$ 450k</div>
+            <div class="mt-1 text-3xl font-semibold text-gray-900">$ 550k</div>
+            <br>
             <div class="text-sm font-medium text-gray-500 truncate">
-              Total Profit
+              Total Profit:Group 3
             </div>
-            <div class="mt-1 text-3xl font-semibold text-gray-900">$ 450k</div>
+            <div class="mt-1 text-3xl font-semibold text-gray-900">$ 750k</div>
+            <br>
             <div class="text-sm font-medium text-gray-500 truncate">
-              Total Profit
+              Total Profit:Group 4
             </div>
-            <div class="mt-1 text-3xl font-semibold text-gray-900">$ 450k</div>
+            <div class="mt-1 text-3xl font-semibold text-gray-900">$ 150k</div>
+            <br>
             <div class="text-sm font-medium text-gray-500 truncate">
-              Total Profit
+              Total Profit:Group 5
             </div>
-            <div class="mt-1 text-3xl font-semibold text-gray-900">$ 450k</div>
-            <div class="text-sm font-medium text-gray-500 truncate">
-              Total Profit
-            </div>
-            <div class="mt-1 text-3xl font-semibold text-gray-900">$ 450k</div>
-            <div class="text-sm font-medium text-gray-500 truncate">
-              Total Profit
-            </div>
-            <div class="mt-1 text-3xl font-semibold text-gray-900">$ 450k</div>
+            <div class="mt-1 text-3xl font-semibold text-gray-900">$ 400k</div>
           </div>
           <div class="w-full px-4 py-5 bg-white rounded-lg shadow">
             <div class="text-sm font-medium text-gray-500 truncate">

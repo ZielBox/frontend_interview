@@ -9,8 +9,13 @@ let menuItems = [
 		label: "Collections",
 		icon: "/src/images/download.png",
 		submenuItems: [
-			{ label: "Submenu Item 1" },
-			{ label: "Submenu Item 2" },
+			{ label: "Brazil"},
+			{ label: "Turkey"},
+			{ label: "France" },
+			{ label: "India" },
+			{ label: "Sweden" },
+			{ label: "Germany" },
+
 			// Add more submenu items
 		]
 	},
@@ -18,8 +23,8 @@ let menuItems = [
 		label: "APIs",
 		icon: "/src/images/download.png",
 		submenuItems: [
-			{ label: "Submenu Item 2" },
-			{ label: "Submenu Item 3" },
+			{ label: "Food" },
+			{ label: "Grocery" }
 			// Add more submenu items
 		]
 	},
@@ -27,8 +32,8 @@ let menuItems = [
 		label: "Environment",
 		icon: "/src/images/download.png",
 		submenuItems: [
-			{ label: "Submenu Item 4" },
-			{ label: "Submenu Item 6" },
+			{ label: "Dev" },
+			{ label: "Prod" },
 			// Add more submenu items
 		]
 	},
@@ -36,8 +41,8 @@ let menuItems = [
 		label: "Servers",
 		icon: "/src/images/download.png",
 		submenuItems: [
-			{ label: "Submenu Item 7" },
-			{ label: "Submenu Item 8" },
+			{ label: "Application" },
+			{ label: "Database" },
 			// Add more submenu items
 		]
 	},
@@ -45,16 +50,16 @@ let menuItems = [
 		label: "Notifications",
 		icon: "/src/images/download.png",
 		submenuItems: [
-			{ label: "Submenu Item 1" },
-			{ label: "Submenu Item 2" },
+			{ label: "Paging" },
+			{ label: "Email" },
 			// Add more submenu items
 		]
 	},{	
 		label: "History",
 		icon: "/src/images/download.png",
 		submenuItems: [
-			{ label: "Submenu Item 1" },
-			{ label: "Submenu Item 2" },
+			{ label: "Archive" },
+			{ label: "Frozen" },
 			// Add more submenu items
 		]
 	},
@@ -120,7 +125,7 @@ function toggleSubMenu(index) {
 							</a>
 							<ul class="sub-menu" class:open={subMenuOpen === index}>
 									{#each item.submenuItems as subitem}
-											<li>{subitem.label}</li>
+											<li><a href=#>{subitem.label}</a></li>
 									{/each}
 							</ul>
 					</div>
@@ -262,5 +267,8 @@ function toggleSubMenu(index) {
 	}
 	.sub-menu-container{
 		color: black;
+	}
+	.sub-menu li {
+		color: blue;
 	}
 </style>
