@@ -21,9 +21,10 @@ let isOpen = false;
                 <div class="dropdown">
                     <div class="flex">
                         <div class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                            <svg class="absolute  text-gray-400 object-center" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                            <div class="image"><!-- <svg class="absolute  text-gray-400 object-center" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg> -->
+                            <img src="/src/images/profile-icon.png" alt="profile"></div>
                         </div>    
-                        <div class="dropdown-content">
+                        <!-- <div class="dropdown-content">
                             <div
                             class="{isOpen
                                 ? 'w-40'
@@ -119,8 +120,8 @@ let isOpen = false;
                                                 d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                                             />
                                             </svg>
-                            
-                                            <span class="ml-2 text-gray-100"> Settings </span>
+                                            
+                                            <span class="text-gray-100"> Settings </span>
                                         </a>
                                     </li>
                                     <li class="rounded-sm">
@@ -146,14 +147,14 @@ let isOpen = false;
                                 </div>
                             </div>
                         </div> 
-                    </div>
+                    </div> -->
 
-                    <!-- <div class="dropdown-content">
+                    <div class="dropdown-content">
                         <a
                         class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
                         href="#"
                         data-te-dropdown-item-ref
-                        >Profile</a>
+                        >Profile Details</a>
                         <a
                         class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
                         href="#"
@@ -164,33 +165,35 @@ let isOpen = false;
                         href="#"
                         data-te-dropdown-item-ref
                         >Logout</a>
-                    </div> -->
+                    </div>
                 </div> 
             </li>
             <li>
                 <div class="dropdown" data-te-dropdown-ref>
-                    <button
-                      class="flex items-center whitespace-nowrap rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-te-dropdown-toggle-ref
-                      aria-expanded="false"
-                      data-te-ripple-init
-                      data-te-ripple-color="light">
-                      Dashboard
-                      <span class="ml-2 w-2">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor"
-                          class="h-5 w-5">
-                          <path
-                            fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                            clip-rule="evenodd" />
-                        </svg>
-                      </span>
-                    </button>
+                    <div class="dropbtn">
+                        <button
+                        class="flex items-center whitespace-nowrap rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] motion-reduce:transition-none dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-te-dropdown-toggle-ref
+                        aria-expanded="false"
+                        data-te-ripple-init
+                        data-te-ripple-color="light">
+                        Dashboard
+                        <span class="ml-2 w-2">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            class="h-5 w-5">
+                            <path
+                                fill-rule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                        </button>
+                    </div>
                     <div class="dropdown-content">
                         <a
                           class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-neutral-600"
@@ -399,11 +402,20 @@ let isOpen = false;
     </div>
   </header>
   <div class="sub-list absolute top-[56px] left-0 w-full bg-gray-800">
-    <ul>
-        <li>
-            pagination
-        </li>
-    </ul>
+    <div class="pagination_section">
+        <a href="#">Previous</a>
+        <a href="#"
+           title="new page 1">1</a>
+        <a href="#"
+           title="new page 2">2</a>
+        <a href="#"
+           title="new page 3">3</a>
+        <a href="#"
+           title="new page 4">4</a>
+        <a href="#"
+           title="new page 5">5</a>
+        <a href="#">Next</a>
+    </div>
 </div>
       
 </main>
@@ -413,11 +425,11 @@ let isOpen = false;
 
 <style lang="postcss">
     nav{
-        background-color: grey;
+        background-color: whitesmoke;
     }
     header {
-      background-color: white;
-      color: white;
+      background-color: whitesmoke;
+      color: whitesmoke;
       padding: top;
       display: flex;
       justify-content: space-between;
@@ -442,7 +454,7 @@ let isOpen = false;
    
     
 
-    .dropbtn {
+    /* .dropbtn {
   background-color: grey;
   color: black;
   padding: 15px;
@@ -450,7 +462,7 @@ let isOpen = false;
   border: none;
   height: auto;
   
-}
+} */
 
 .dropdown {
   position: relative;
@@ -471,6 +483,7 @@ let isOpen = false;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  /* position: absolute; */
 }
 .topnav {
   overflow: hidden;
@@ -478,6 +491,7 @@ let isOpen = false;
   background-color: grey;
   
 }
+
 /* .flex{
     outerWidth:"50px"
 } */
@@ -485,13 +499,83 @@ let isOpen = false;
     height: 25px;
 
 }
+/* .my-list li{
+    background-color: aqua;
+} */
 .my-list li:nth-child(2) {
-    margin-left: 95px; 
+    margin-left: 130px; 
+}
+.my-list li:nth-child(1) {
+    margin-left: 50px; 
 }
 .my-list li:nth-child(6) {
-    margin-left: 700px; 
+    margin-left: 550px; 
     
 }
+
+.my-list .rounded-sm{
+    margin-left: 0px;
+}
+.pagination_section {
+      position: relative;
+      background-color: whitesmoke;
+      
+    }
+     
+    /* pagination styling */
+    .pagination_section a {
+      color: black;
+      padding: 10px 18px;
+      text-decoration: none;
+    }
+     
+    /* pagination hover effect on non-active */
+    .pagination_section a:hover:not(.active) {
+      background-color: #031F3B;
+      color: white;
+    }
+     
+    /* .flex-1{
+        align-items: center;
+    } */
+    /* pagination hover effect on active*/
+     
+    /* a:nth-child(5) {
+      background-color: green;
+      color: white;
+    } */
+     
+    a:nth-child(1) {
+      font-weight: bold;
+    }
+     
+    a:nth-child(7) {
+      font-weight: bold;
+    }
+    
+    /* .image{
+        width:100px;
+    } */
+    .content {
+      margin: 50px;
+      padding: 15px;
+      width: 700px;
+      height: 200px;
+      border: 2px solid black;
+      color:blue;                                                                                                               
+    }
+
+    .my-list a{
+        margin-left:1px
+    }
+
+    /* span{
+        margin-left:0px;
+    } */
+
+    /* .rounded-sm{
+        margin-left:0px
+    } */
 
 /* .topnav a {
     /* float: left; */
@@ -507,13 +591,14 @@ let isOpen = false;
 /* / */
 
 
-
+.dropbtn:hover .dropdown-content {display: block;}
 /* .dropdown-content a:hover {background-color: #ddd;} */
 .dropdown-content a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display:block;}
 
-.dropdown:hover .dropbtn {background-color: grey;}
+
+/* .dropdown:hover .dropbtn {background-color: grey;} */
 
 </style>
   

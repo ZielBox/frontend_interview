@@ -83,7 +83,8 @@ function toggleSubMenu(index) {
 
 <aside class="absolute w-full h-full bg-gray-200 border-r-2 shadow-lg left-0 top-0 h-18 w-16" class:open>
 	<nav> <br>
-		Workspace
+		<div class="workspace">
+		<b>WORKSPACE</b></div>
 		<ul class="nav" role="tablist">
             {#each menuItems as item, index}
                 <li class="nav-item" role="presentation">
@@ -97,7 +98,7 @@ function toggleSubMenu(index) {
 					<span></span>
 							<div class="sub-menu-container" class:open={subMenuOpen === index}>
                     <!-- {#if subMenuOpen === index} -->
-										<div class="collapsible-section">
+							<div class="collapsible-section">
                         <ul class="sub-menu" style="left: 100%; top: 0;">
                             {#each item.submenuItems as subitem}
                                 <li>{subitem.label}</li>
@@ -115,10 +116,7 @@ function toggleSubMenu(index) {
 			{#each menuItems as item, index}
 					<div class="foldable-option">
 							<a on:click={() => toggleSubMenu(index)} class="option-link">
-									<!-- {#if item.icon}
-											<img src={item.icon} alt="" class="option-icon" />
-									{/if} -->
-									<!-- {item.label} -->
+								
 							</a>
 							<ul class="sub-menu" class:open={subMenuOpen === index}>
 									{#each item.submenuItems as subitem}
@@ -144,8 +142,8 @@ function toggleSubMenu(index) {
 		height: 10000px;
 		width: 150px;
 		padding: 20px;
-		border: none;
-		background-color: grey;
+		border: solid;
+		background-color: whitesmoke;
 		order: 2;
 		top: 2;
 		transition: left 0.3s ease-in-out;
@@ -160,9 +158,9 @@ function toggleSubMenu(index) {
 		width: 150px;
 		padding: 20px;
 		border: none;
-		background-color: grey;
+		background-color:whitesmoke;
 		order: 2;
-		top: 2;
+		top: 3;
 		transition: left 0.3s ease-in-out;
 		/* transition: left 0.3s ease-in-out */
 	}
@@ -171,7 +169,8 @@ function toggleSubMenu(index) {
 	.nav-item {
         margin-bottom: 38px; 
 		margin-top: 38px;
-		position: relative;/* Add space between menu items */
+		position: relative;
+		color: #3B71CA;/* Add space between menu items */
     }
 
 	.open {
@@ -212,9 +211,9 @@ function toggleSubMenu(index) {
 
 		.content-section {
         float: left;
-        position: fixed;
+        position: absolute;
         left: 216px; /* Adjust this value to create space for the sidebar */
-        width: calc(100% - 216px); /* Adjust the width accordingly */
+        width: calc(10% - 216px); /* Adjust the width accordingly */
         padding: 20px;
         order: 3;
         top: 0;
@@ -227,7 +226,7 @@ function toggleSubMenu(index) {
         height: 100%; /* Adjust the height to cover the full height */
         width: 90px; /* Adjust the width for the colored rectangle */
         padding: 20px;
-        background-color: grey;
+        background-color: whitesmoke;
         order: 2;
         top: 0;
         transition: left 0.3s ease-in-out;
@@ -251,9 +250,17 @@ function toggleSubMenu(index) {
 
     .sub-menu {
         display: none;
+		color: black;
+		transition: 5s;
     }
 
     .sub-menu.open {
         display: block;
     }
+	.workspace{
+		color: blue;
+	}
+	.sub-menu-container{
+		color: black;
+	}
 </style>

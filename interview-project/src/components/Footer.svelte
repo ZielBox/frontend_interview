@@ -10,13 +10,13 @@
        bottom: 0;
        width: 100%;
        padding: auto;
-       background-color: grey;
-       color: white;
+       background-color: whitesmoke;
+       color: black;
        text-align: right;
        padding: 18px 16px;
     }
     button{
-        background-color: grey;
+        background-color: #3B71CA;
         color: white;
         padding: 15px;
         font-size: 20px;
